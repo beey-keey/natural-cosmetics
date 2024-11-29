@@ -1,26 +1,31 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <HelloWorld msg="Welcome to natural cosmetics" />
+  <v-app>
+    <!-- <v-container fluid class="dashboard"> -->
+    <!-- <Navbar /> -->
+    <FlowerBloom />
+    <!-- <v-col cols="3">
+          <Sidebar />
+        </v-col> -->
+    <!-- <v-col cols="9">
+          <DashboardContent />
+        </v-col> -->
+    <!-- </v-container> -->
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import FlowerBloom from "./components/FlowerBloom.vue";
 
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
-  },
+  components: { FlowerBloom },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.dashboard {
+  background: linear-gradient(135deg, #f5ebe0, #f5d3c8);
+  min-height: 100vh;
+  color: #5a4036;
+  font-family: "Roboto", sans-serif;
 }
 </style>
